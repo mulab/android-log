@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<FindBugsFilter>
+    <Match>
+        <Bug code="Dm"/>
+    </Match>
+    <Match>
+        <Class name="~^.*\.R\$.*" />
+        <Bug code="Nm"/>
+    </Match>
+    <Match>
+        <Class name="~^mu\.lab\.tunet\.exp\.records\..*"/>
+        <Bug code="UrF" />
+    </Match>
+    <Match>
+        <Or>
+            <Method name="onCreate"/>
+            <Method name="onDestroy"/>
+            <Method name="onTerminate"/>
+            <Field type="android.content.Context"/>
+        </Or>
+        <Bug code="ST"/>
+    </Match>
+    <Match>
+        <Class name="mu.lab.now.curriculum.Course"/>
+        <Bug code="Eq" />
+    </Match>
+</FindBugsFilter>
