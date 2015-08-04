@@ -1,2 +1,5 @@
 /build
 .gradle
+.idea
+TUNet-log.iml
+local.properties
