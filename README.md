@@ -4,8 +4,14 @@ Android log library for debugging. It's a wrapper of android.util.Log, and will 
 ## Usage
 
 In your gradle build file add dependency:
-```
-compile 'mu.lab:log:1.0.0'
+```gradle
+repositories {
+    // ...
+    maven { url "https://jitpack.io" }
+ }
+dependencies {
+    compile 'com.github.mulab:android-log:1.0.1'
+}
 ```
 
 Add `Log.init(this)` in your Application's onCreate method:
